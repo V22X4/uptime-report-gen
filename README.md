@@ -14,11 +14,11 @@ Follow the steps below to set up and run the project locally:
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/V22X4/uptime-report-gen.git
+   git clone https://github.com/V22X4/Vishal-25-11-2024.git
    ```
    Navigate into the project folder:  
    ```bash
-   cd uptime-report-gen
+   cd Vishal-25-11-2024
    ```
 
 2. **Set Up a Virtual Environment**  
