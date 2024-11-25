@@ -62,7 +62,7 @@ def main(folder_path):
     with get_db() as db:
         # Process store_status.csv
         status_file = os.path.join(folder_path, "store_status.csv")
-        print(status_file)
+        
         if os.path.exists(status_file):
             status_data = load_csv_to_dataframe(status_file)
             insert_store_status(status_data, db)
@@ -81,33 +81,6 @@ def main(folder_path):
 
     print("Data successfully inserted into the database.")
     
-import os
-
-def print_files_and_folders(folder_path):
-    # Check if the given folder exists
-    if not os.path.exists(folder_path):
-        print(f"The folder at {folder_path} does not exist.")
-        return
-    
-    # Iterate over all items in the folder
-    for root, dirs, files in os.walk(folder_path):
-        # Print the folder path
-        print(f"Folder: {root}")
-        
-        # Print subfolders (dirs)
-        if dirs:
-            print("Subfolders:")
-            for dir_name in dirs:
-                print(f"  {dir_name}")
-        
-        # Print files
-        if files:
-            print("Files:")
-            for file_name in files:
-                print(f"  {file_name}")
-        
-        print()  # Add an empty line between folder listings
-
 
 if __name__ == "__main__":
     # Ensure you have downloaded the zip file manually or replace the path with a downloaded path

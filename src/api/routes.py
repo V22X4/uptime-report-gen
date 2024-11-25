@@ -40,7 +40,7 @@ async def generate_report(report_id: str):
             os.makedirs("reports", exist_ok=True)
             file_path = f"reports/{report_id}.csv"
             
-            print("Writing report to", file_path)
+            # print("Writing report to", file_path)
             
             with open(file_path, "w", newline="") as f:
                 print("Writing report to", file_path)
